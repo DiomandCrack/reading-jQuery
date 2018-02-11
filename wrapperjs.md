@@ -54,7 +54,7 @@ return jQuery;
 
 #### 1.1.1 函数定义表达式
 
-函数定义表达式就是定义了一个JavaScript函数,也被称为"函数字面量"或“函数直接量”。`function`关键字后面是`()`和`{}`函数名称标识符可有可无
+函数定义表达式就是定义了一个JavaScript函数,也被称为"函数字面量"或“函数直接量”。`function`关键字后面是`()`和`{}`，函数名称标识符可有可无
 
 #### 1.1.2 调用表达式
 
@@ -71,6 +71,8 @@ return jQuery;
     window.jQuery = window.$ = jQuery;
 })(window);
 ```
+
+`function`必须用`()`包裹，JavaScript中`()`里不能包含语句，JavaSctipt解释器就将`()`里的`function`解析成了函数定义表达式，**函数表达式**后面再**加`()`**就成了**调用表达式**
 
 
 
