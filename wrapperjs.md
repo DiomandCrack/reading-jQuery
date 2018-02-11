@@ -104,13 +104,22 @@ function(){//...}();
 
 对不同的平台加载方式不同，支持AMD和CommonJS规范
 
-### 2.1 `window`作为实参参数
+### 2.1 `window`作为实参传入
 
 将`window`作为实参:
 
 - 1 主要提高性能，如果`window`在函数作用域内,由于`window`是全局对象在作用域链的最顶层,查找`window`会通过作用域链一层一层向上找，影响性能
 
 - 2 代码压缩 能节省一点空间
+
+### 2.2 第二个参数能传`undifined`
+
+```js
+typeof window !== "undefined" ? window : this, function( window, noGlobal ){//...}
+```
+`undifined`不是JavaScript关键字,而是JavaScript预定义的全局变量，ES3中是可读可写的变量，ES5规定是只读的
+防止某些浏览器在外部修改`undefined`
+
 
 
 
