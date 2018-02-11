@@ -60,6 +60,20 @@ return jQuery;
 
 > 调用表达式是一种调用（或者执行）函数或方法的语法表示
 
+一个函数表达式后面跟随`()`
+
+### 1.2 函数自动调用
+
+```js
+(function(window, undefined) {
+    var jQuery = function() {}
+    // ...
+    window.jQuery = window.$ = jQuery;
+})(window);
+```
+
+
+
 
 
 
