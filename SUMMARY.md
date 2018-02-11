@@ -1,3 +1,5 @@
 # Summary
 
-* [First Chapter](chapter1.md)
+* [jQuery源码阅读](README.md)
+* [core.js](chapter1.md)
+

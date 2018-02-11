@@ -1,3 +1,4 @@
-# First Chapter
+# core.js
 
-GitBook allows you to organize your book into chapters, each chapter is stored in a separate file like this one.
+定义了jQuery构造函数，返回值 实例化jQuery对象
+
